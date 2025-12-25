@@ -1,29 +1,29 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  firstname: MyString
-  lastname: MyString
-  haspassport: false
-  salary: 1
-  birthdate: 2025-12-25
-  hiredate: 2025-12-25
-  gender: MyString
-  notes: MyString
-  email: MyString
-  phone: MyString
+  firstname: John
+  lastname: Doe
+  haspassport: true
+  salary: 75000
+  birthdate: 1990-05-15
+  hiredate: 2020-01-10
+  gender: Male
+  notes: Senior developer
+  email: john.doe@example.com
+  phone: 555-0001
   country: one
   department: one
 
 two:
-  firstname: MyString
-  lastname: MyString
+  firstname: Jane
+  lastname: Smith
   haspassport: false
-  salary: 1
-  birthdate: 2025-12-25
-  hiredate: 2025-12-25
-  gender: MyString
-  notes: MyString
-  email: MyString
-  phone: MyString
+  salary: 65000
+  birthdate: 1992-08-20
+  hiredate: 2021-03-15
+  gender: Female
+  notes: Marketing specialist
+  email: jane.smith@example.com
+  phone: 555-0002
   country: two
   department: two
