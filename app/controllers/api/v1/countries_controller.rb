@@ -23,6 +23,15 @@ class Api::V1::CountriesController < ApplicationController
     render json: { message: 'Country deleted Successfully' }, status: :no_content
   end
 
+  def create
+    @country = Country.new(country_params)
+    if @country.save
+      render json: @country, status: :created
+    else
+      render json: @country.errors, status: :unprocessable_entity # 422
+    end
+  end
+
   private
   def set_country
     begin
