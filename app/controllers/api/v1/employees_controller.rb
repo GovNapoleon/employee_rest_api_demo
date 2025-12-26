@@ -1,6 +1,6 @@
 class Api::V1::EmployeesController < ApplicationController
 
-  before_action :set_employee, only: [:show, :update, :destroy]
+  before_action :set_employee, only: [:show, :update, :destroy, :create]
   def index
     @employees = Employee.includes(:department, :country)
     render json: @employees, status: :ok
@@ -19,7 +19,17 @@ class Api::V1::EmployeesController < ApplicationController
   end
 
   def destroy
+    @employee.destroy
+    render json: { message: 'Employee deleted Successfully' }, status: :no_content
+  end
 
+  def create
+    @employee = Employee.new(employees_params)
+    if @employee.save
+      render json: @employee, status: :created
+    else
+      render json: @employee.errors, status: :unprocessable_entity # 422
+    end
   end
 
   private
