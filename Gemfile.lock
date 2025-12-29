@@ -126,7 +126,8 @@ GEM
       net-smtp
     marcel (1.1.0)
     mini_mime (1.1.5)
-    minitest (5.27.0)
+    minitest (6.0.1)
+      prism (~> 1.5)
     msgpack (1.8.0)
     net-imap (0.6.2)
       date
@@ -308,7 +309,7 @@ DEPENDENCIES
   debug
   factory_bot_rails (~> 6.4)
   faker (~> 3.2)
-  minitest (~> 5.20)
+  minitest (~> 6.0)
   puma (>= 5.0)
   rack-cors
   rails (~> 7.2.3)
