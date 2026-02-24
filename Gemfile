@@ -30,7 +30,7 @@ gem "bootsnap", require: false
 gem "rack-cors"
 
 # Pin minitest to 5.x for Rails 7.2 compatibility
-gem "minitest", "~> 5.20"
+gem "minitest", "~> 6.0"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
